@@ -1,0 +1,7 @@
+FROM pyldap-base
+
+
+RUN /home/linuxbrew/.linuxbrew/bin/brew install python@3.8
+
+RUN ln -s /usr/bin/gcc /usr/bin/gcc-5
+RUN apt-get install -y libsasl2-dev python-dev libldap2-dev libssl-dev
